@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Solar Planet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculate a weight of an object on a planet</h1>
+      <div class="cent">
+        <input type="text" id="mass" placeholder="Mass in Kilogram" />
+        <select id="planet">
+          <option value="none">Select planet</option>
+          <option value="earth">earth</option>
+          <option value="jupiter">jupiter</option>
+          <option value="mars">mars</option>
+          <option value="mercury">mercury</option>
+          <option value="moon">moon</option>
+          <option value="neptune">neptune</option>
+          <option value="pluto">pluto</option>
+          <option value="saturn">saturn</option>
+          <option value="uranus">uranus</option>
+          <option value="venus">venus</option>
+        </select>
+        <button id="btn">Calculate weight</button>
+      </div>
+    </header>
+    <main>
+      <div class="flex">
+        <div>
+          <img src="./images/images/earth.png" alt="pic1" id="pic1" />
+        </div>
+        <div class="change"><inline id="secd">The weight of the object on <inline class = "bold">Planet</inline> is</inline> <inline id="result">edward</inline></div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

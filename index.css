@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(./images/images/galaxy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .cent {
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+    margin: 35px;
+  }
+  .flex {
+    background-color: rgba(78, 73, 73, 0.486);
+    margin-top: 15px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .change {
+    background-color: rgba(129, 113, 113, 0.39);
+    width: 70vh;
+    height: 15vh;
+    font-size: 10px;
+    margin: 50px;
+    padding: 5px;
+  }
+
+  .bold{
+font-weight: 800;
+
+  }
+
+#result{
+display: block;
+border-radius: 50%;
+background-color: rgba(212, 189, 189, 0.116);
+width: 3rem;
+height: 3rem;
+margin: auto;
+text-align: center;
+padding-top: 15px;
+}
+
+
