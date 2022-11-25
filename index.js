@@ -5,58 +5,42 @@ let picture = document.getElementById("pic1");
 let second = document.querySelector("#secd");
 let result = document.querySelector("#result");
 let calc;
+let plane = (gravity, second) => {
+  calc = entry.value * gravity;
+  result.textContent = `${calc}N`;
+  result.style.display = "block";
+};
 
 button.addEventListener("click", () => {
   if (planet.value == "earth") {
-    let gravity = 9.807;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object on Earth is";
-    result.textContent = `${calc}N`;
+    plane(9.807, (second.textContent = "The weight of an object on Earth is"));
   } else if (planet.value == "jupiter") {
-    let gravity = 24.79;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Jupiter is";
-    result.textContent = `${calc}N`;
+    plane(
+      24.79,
+      (second.textContent = "The weight of an object in Jupiter is")
+    );
   } else if (planet.value == "mars") {
-    let gravity = 3.721;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Mars is";
-    result.textContent = `${calc}N`;
+    plane(3.721, (second.textContent = "The weight of an object in Mars is"));
   } else if (planet.value == "mercury") {
-    let gravity = 3.7;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Mercury is";
-    result.textContent = `${calc}N`;
+    plane(3.7, (second.textContent = "The weight of an object in Mercury is"));
   } else if (planet.value == "moon") {
-    let gravity = 1.62;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Moon is";
-    result.textContent = `${calc}N`;
+    plane(1.62, (second.textContent = "The weight of an object in Moon is"));
   } else if (planet.value == "venus") {
-    let gravity = 8.87;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Venus is";
-    result.textContent = `${calc}N`;
+    plane(8.87, (second.textContent = "The weight of an object in Venus is"));
   } else if (planet.value == "pluto") {
-    let gravity = 0.62;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Pluto is";
-    result.textContent = `${calc}N`;
+    plane(0.62, (second.textContent = "The weight of an object in Pluto is"));
   } else if (planet.value == "saturn") {
-    let gravity = 10.44;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Saturn is";
-    result.textContent = `${calc}N`;
+    plane(10.44, (second.textContent = "The weight of an object in Saturn is"));
   } else if (planet.value == "uranus") {
-    let gravity = 8.87;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Uranus is";
-    result.textContent = `${calc}N`;
+    plane(8.87, (second.textContent = "The weight of an object in Uranus is"));
   } else if (planet.value == "neptune") {
-    let gravity = 11.15;
-    calc = entry.value * gravity;
-    second.textContent = "The weight of an object in Neptune is";
-    result.textContent = `${calc}N`;
+    plane(
+      11.15,
+      (second.textContent = "The weight of an object in Neptune is")
+    );
+  } else if (planet.value == "none") {
+    second.textContent = "Choose a planet";
+    result.style.display = "none";
   }
 });
 
@@ -79,7 +63,9 @@ planet.addEventListener("change", () => {
     picture.src = "./images/images/saturn.png";
   } else if (planet.value == "earth") {
     picture.src = "./images/images/earth.png";
-  } else {
+  } else if (planet.value == "venus") {
     picture.src = "./images/images/venus.png";
+  } else {
+    picture.src = "./images/images/earth.png";
   }
 });
