@@ -7,7 +7,7 @@ let result = document.querySelector("#result");
 let calc;
 let plane = (gravity, second) => {
   calc = entry.value * gravity;
-  result.textContent = `${calc}N`;
+  result.textContent = `${calc} N`;
   result.style.display = "block";
 };
 
