@@ -20,10 +20,14 @@ h1 {
   margin-top: 4%;
 }
 
-img {
+.pic {
   width: 55%;
   height: 55%;
   margin: 35px;
+}
+
+.pic.hidden{
+  display: none;
 }
 .flex {
   background-color: rgba(78, 73, 73, 0.486);
