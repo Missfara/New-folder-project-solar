@@ -21,7 +21,7 @@ let galaxy = {
 
 let plane = (gravity, planet) => {
   calc = entry.value * gravity;
-  result.textContent = `${calc} N`;
+  result.textContent = `${calc.toFixed()} N`;
   result.style.display = "block";
   second.textContent = `The weight of an object on ${planet} is`;
 };
@@ -72,35 +72,35 @@ button.addEventListener("click", () => {
 planet.addEventListener("change", () => {
   if (planet.value == "jupiter") {
     picture.src = "./images/images/jupiter.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "mars") {
     picture.src = "./images/images/mars.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "mercury") {
     picture.src = "./images/images/mercury.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "moon") {
     picture.src = "./images/images/moon.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "neptune") {
     picture.src = "./images/images/neptune.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "pluto") {
     picture.src = "./images/images/pluto.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "uranus") {
     picture.src = "./images/images/uranus.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "saturn") {
     picture.src = "./images/images/saturn.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "earth") {
     picture.src = "./images/images/earth.png";
-    picture.classList.remove('hidden')
+    picture.classList.remove("hidden");
   } else if (planet.value == "venus") {
     picture.src = "./images/images/venus.png";
-    picture.classList.remove('hidden')
-  } else if (planet.value=="none") {
-    picture.classList.add('hidden')
+    picture.classList.remove("hidden");
+  } else if (planet.value == "none") {
+    picture.classList.add("hidden");
   }
 });
